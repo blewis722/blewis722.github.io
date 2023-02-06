@@ -1,0 +1,81 @@
+h1{
+   text-align: center;
+    background-color: #CED3DC;
+    color: #133C55;
+   
+    font-family: fantasy;
+    
+}
+
+
+body{
+    background-color: #CED3DC;
+   
+    background-image: linear-gradient(#ABA9C3, #442F38, #6C464F);
+    color: #CED3DC;
+    
+}
+
+ .p_background{
+    /* background-color: rgb(251, 190, 144); */
+    
+    font-family:'Courier New', Courier, monospace;
+    color: #CED3DC;
+   
+}
+
+
+
+p{
+   
+    font-family:'Courier New', Courier, monospace;
+}
+
+.sharing{
+    font-family: fantasy;
+}
+
+h2{
+    background-color: #CED3DC;
+    
+    font-family: franklink gothic medium;
+    color: #133C55;
+}
+
+h3{
+    text-align: left;
+   display: inline-flex;
+    font-family: franklin gothic medium;
+  background-color: #CED3DC;
+ 
+  color: #133C55;
+}
+
+img{
+    width: 500px;
+    height: 600px;
+}
+
+.image1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    
+}
+.li{
+    font-family:'Courier New', Courier, monospace;
+}
+a:link{
+   color: #CED3DC;
+}
+a:visited{
+    color: bisque;
+}
+a:hover{
+    color: teal;
+}
+
+header,footer{
+    text-align: center;
+}
