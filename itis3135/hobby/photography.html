@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Brianna Lewis's Big Lion | Home</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    text-align: center;
+    color: #afccd6;
+}
+body{
+ 
+    background:#343F4F;
+
+}
+
+h2{
+    text-align: center;
+    color: #afccd6;
+}
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+
+}
+.full-img{
+    width: 100%;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.full-img img{
+    width:90%;
+    max-width: 500px;
+}
+.full-img span{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 30px;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+a:link{
+    color: #f0ce97;
+    text-decoration: none;
+
+}
+a:visited{
+    color:#aeaeae;
+}
+a:hover{
+    color:#FC6D6D;
+    
+  
+}
+footer{
+    text-align: center;
+}
+</style>
+
+<body>
+    <header class="header">
+        <h1>ITIS3135 | Brianna Lewis's Big Lion</h1>
+       <nav>
+        <a href="index.html">Home|</a>
+        <a href="who.html">About Me |</a>
+        <a href="photography.html">Photography|</a>
+        <a href="videography.html">Videography |</a>
+        <a href="how.html">How |</a>
+        <a href="why.html">Why</a>
+          <nav>
+            
+    </header>
+   <main>
+<h2>Photography</h2>
+<h3>
+<p></p>
+<p></p>
+</h3>
+<div class="full-img" id="full-img-box">
+    <img src="images/burger.jpg" alt="Resturant" id="full-img">
+    <span onclick="closeFullImg()">X</span>
+</div>
+<div class="img-gallery">
+    <img src="images/burger.jpg" alt="Resturant" onclick="openFullImg(this.src)">
+    <img src="images/rose.jpg" alt="Flower" onclick="openFullImg(this.src)">
+    <img src="images/clt_night.jpg" alt="clt night" onclick="openFullImg(this.src)">
+    <img src="images/clt_uptown.jpg" alt="clt uptown" onclick="openFullImg(this.src)">
+    <img src="images/clt.jpg" alt="clt" onclick="openFullImg(this.src)">
+    <img src="images/purple_flower.jpg" alt="purple flower" onclick="openFullImg(this.src)">
+    <img src="images/flower.jpg" alt="Flower" onclick="openFullImg(this.src)">
+</div>
+<script>
+    let fullImgBox = document.getElementById("full-img-box");
+    let fullImg = document.getElementById("full-img");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src=pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display="none";
+    }
+
+</script>
+
+   </main>
+   <footer>
+    <nav id="footerNav">
+        <a href="../">CLT Home |</a> 
+        <a href="https://github.com/blewis722">github.com |</a>
+        <a href="https://blewis722.github.io/">github.io |</a>
+        <a href="https://www.freecodecamp.org/BriannaLewis360">freecodecamp |</a>
+        <a href="https://www.codecademy.com/profiles/briannalewis360">codeacademy |</a>
+        <a href="https://www.linkedin.com/in/brianna-lewis-915405223">Linkedin |</a>
+        <a href=""></a>
+    </nav>
+    <p> <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" >
+        
+        <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." /> 
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_html">
+        
+
+        <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
+    </a></p>
+    <p>Page designed by <a href="lewiswebco.html">  LewisWeb and Co</a> 2023</p>
+
+   
+    <script src="scripts/defaultscripts.js"></script>
+   </footer>
+</body>
+</html>

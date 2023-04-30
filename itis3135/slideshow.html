@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Brianna Lewis's Big Lion | Image Gallary </title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+
+<body class="body_gallary">
+    <header>
+        <h1>ITIS3135 | Brianna Lewis's Big Lion</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+   <main>
+<h2>Image Gallary</h2>
+
+<div class="container">
+
+    
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="images/laImage_3.jpg" alt="laImage" height="400" >
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="images/clt_night.jpg" alt="clt night" height="400" >
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="images/clt_uptown.jpg" alt="clt uptown" height="400" >
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="images/flower.jpg" alt="flower" height="400">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="images/purple_flower.jpg" alt="purple flower" height="400">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="images/rose.jpg" alt="rose" height="400">
+    </div>
+  
+   
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+   
+    <div class="caption-container">
+      <p id="caption"></p>
+  
+    </div>
+  
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo" src="images/laImage_3.jpg"  height="111" onclick="currentSlide(1)" alt="The Hollywood Sign">
+      </div>
+      <div class="column">
+        <img class="demo" src="images/clt_night.jpg"  height="111" onclick="currentSlide(2)" alt="Charlotte Night">
+      </div>
+      <div class="column">
+        <img class="demo" src="images/clt_uptown.jpg"  height="111"  onclick="currentSlide(3)" alt="Charlotte Uptown">
+      </div>
+      <div class="column">
+        <img class="demo" src="images/flower.jpg" height="111"  onclick="currentSlide(4)" alt="Flower">
+      </div>
+      <div class="column">
+        <img class="demo" id="flower" src="images/purple_flower.jpg"  height="111"  onclick="currentSlide(5)" alt="Purple Flower">
+      </div>
+      <div class="column">
+        <img class="demo" id="rose" src="images/rose.jpg"   height="111"  onclick="currentSlide(6)" alt="Rose">
+      </div>
+    </div>
+  </div>
+
+
+   </main>
+   <footer>
+    <div data-include="components/footer.html"></div>
+
+   
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/include.js"></script>
+   </footer>
+</body>
+</html>

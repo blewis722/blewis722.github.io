@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(255,255,255);
+   
+}
+.container{
+    text-align: center;
+}
+
+h1{
+    color: #79adab;
+    font-family: cursive;
+}
+
+
+nav{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: space-between;
+   padding-top: 10px;
+   padding-left:10%;
+   padding-right: 10%;
+   background-color: rgb(213, 211, 211);
+margin-top: -10px;
+margin-right:-15px;
+margin-left:-10px;
+
+}
+.logo{
+    font-size: 28px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+footer{
+    text-align: center;
+    
+}
+a{
+    color: #79adab;
+    
+}
+
+
+p{
+    color: rgb(72, 70, 70);
+}
+h2{
+    color:#79adab;
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brianna Lewis's Passion</title>
+
+
+<style>
+html{
+  
+    font-family:monospace;
+}
+h1{
+    text-align: center;
+    
+    top:0;
+    left: 35%;
+    color: #f3f2e5;
+    margin-top: 5%;
+}
+.menu{
+    height:50px;
+    width:100%;
+    position:fixed;
+    top:0;
+    Left:0;
+    background:rgb(211, 89, 44);
+    box-shadow: 2px 0px 5px black;
+    justify-content: space-around;
+    text-align: center;
+    display: block;
+    padding: 11px;
+    
+}
+
+.menu a{
+    margin-top:75px;
+    font-size:20px;
+    color:#131313;
+    text-decoration: none;
+   
+    
+}
+.menu a:hover{
+  
+    color:#343F4F;
+   
+    
+}
+
+
+section{
+    height:200vh;
+    width:100vw;
+ display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    
+    text-align: center;
+    color:rgb(254, 141, 100);
+    top:0;
+    left: 35%;
+   
+    margin-top: 5%;
+}
+ 
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+ 
+    background:rgb(74, 74, 74);
+
+}
+.wrapper{
+    display: inline-flex;
+       display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+.wrapper .static-txt{
+    font-size: 60px;
+    color: ivory;
+    font-weight: 400;
+    
+
+}
+.wrapper .dynamic-txts{
+margin-left: 15px;
+height: 70px;
+line-height:70px;
+
+overflow: hidden;
+}
+.dynamic-txts li{
+    list-style: none;
+    font-size: 58px;
+    /* font-weight: 500px; */
+    color: rgb(211, 89, 44); 
+    position: relative;
+   top: 0;
+  
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+  top: -280px;
+
+    }
+}
+.dynamic-txts li span{
+    position: relative;
+}
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(74, 74, 74);
+    border-left:2px solid #FC6D6D;
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        left:100%;
+        margin:0 -35px 0 35px;
+
+    }
+}
+
+
+header,footer{
+    text-align: center;
+}
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+}
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+
+}
+.full-img{
+    width: 100%;
+    height:100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    margin-bottom: 30px;
+}
+.full-img img{
+    width:90%;
+    max-width: 500px;
+}
+.full-img span{
+    position: absolute;
+    top:5%;
+    right: 5%;
+    font-size: 30px;
+    color: aliceblue;
+    cursor: pointer;
+}
+.profile{
+    float:right;
+    width:30%;
+}
+.cent{
+    margin-top: 20px;
+    /* position:flex; */
+    width:100%;
+    height:400px;
+    text-indent: 3%;
+    background: #675757;
+ 
+}
+.profile{
+    display: flex;
+    width: 300px;
+    height: 400px;
+}
+.cent p{
+  margin-right: 50px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.one, .two, .three,.four, .five, .six,.seven, .eight, .nine{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top:25px;
+    align-items: center;
+}
+figcaption{
+    text-align: center;
+    color: #aeaeae;
+    margin-bottom:25px;
+}
+.info{
+    color: #edebd1;
+    margin-left: 15px;
+    margin-right:20px;
+    text-indent: 2%;
+}
+
+ .video, .video_two{
+    margin-left: 100px;
+    margin-right:auto;
+    margin-top: 130px; 
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Brianna Lewis's Passion</h1>
+       <nav class="menu" id="links">
+        <a onclick="showHomePage()" href="index.html">Home |</a>
+        <a onclick="showWhoPage()" href="#who">About Me |</a>
+        <a onclick="showPhotoPage()" href="#photography">Photography|</a>
+        <a onclick="showVideoPage()" href="#videography">Videography |</a>
+        <a onclick="no()"  href="#how">How |</a>
+       </nav>
+            
+    </header>
+   <main>
+    <section class="section">
+<h2>Home</h2>
+
+<div class="content">
+<div class="wrapper">
+    <div class="static-txt">I'm a</div>
+ <ul class="dynamic-txts">
+    <li><span>Creative</span></li>
+    <li><span>Photogragher</span></li>
+    <li><span>Videographer</span></li>
+ </ul>
+</div>
+</div>
+</section>
+<br><br>
+<br>
+<section id="who" class="section">
+    <h2>About Me</h2>
+    <div class="cent">
+        <figure><img class="profile" src="images/profile1.JPG" alt="Profile Image" ></figure>
+       
+            <br>
+            
+        <p>My name is Brianna Lewis and I love art. The way I express myself is through art. Whether that is through tattoos, photography, or videography.
+            I found my love at Winston-Salem State University. Thanks to my amazing professors in the Mass Communications department. I had to get out of my 
+            comfort zone and I met amazing people through photography and videography. You can connect to people through different types of art and mine so happen 
+            to be photography and videography.
+        </p><br>
+        <br>
+        <p>My favorite type of photography is documentary and street photography. Also my favorite type of videography is documnetary. I love to be the 
+            voice for the voiceless. If I can make an impact on one person through my art then I have done my job right. 
+        </p>
+        
+        </div>
+</section><br><br>
+
+<section id="photography" class="section">
+    <h2>Photography</h2>
+    <div class="full-img" id="full-img-box">
+        <img src="images/burger.jpg" alt="Resturant" id="full-img">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/burger.jpg" alt="Resturant" onclick="openFullImg(this.src)">
+        <img src="images/rose.jpg" alt="Flower" onclick="openFullImg(this.src)">
+        <img src="images/clt_night.jpg" alt="clt night" onclick="openFullImg(this.src)">
+        <img src="images/clt_uptown.jpg" alt="clt uptown" onclick="openFullImg(this.src)">
+        <img src="images/clt.jpg" alt="clt" onclick="openFullImg(this.src)">
+        <img src="images/purple_flower.jpg" alt="purple flower" onclick="openFullImg(this.src)">
+        <img src="images/flower.jpg" alt="Flower" onclick="openFullImg(this.src)">
+    </div>
+</section>
+<section id="videography" class="section">
+    <h2 >Videography</h2>
+    <br>
+    <br>
+    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/rNhR8AVXvqw" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <iframe class="video_two" width="560" height="315" src="https://www.youtube.com/embed/_2d2DD9_0GM" title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</section>
+<section id="how" class="section">
+    <h2>How Did I get Started?</h2>
+    <br>
+    <br>
+
+<p class="info">I actually got started by my classmate at Winston-Salem State University.
+    I was a senior and just needed an extra credit and my classmate told me to take this photography class. Unfortutnately it was hard to get 
+    to in but because of her I was able to get into this class. The professor was a huge photographer in New York and her teaching style was to go 
+    out in the field and take images instead of being in the classroom all day. We would have to talk to people on campus and ask them if we could take 
+    their pictures, which was way outside of my comfort zone.
+</p><br>
+
+<figure class="one">
+    <img src="images/firstImage.JPG" alt="two students sitting on a bench" width="400">
+    <figcaption>
+Two students sitting on a bench.
+    </figcaption>
+    </figure>
+    <figure class="two">
+    <img src="images/wssuImage.JPG" alt="2 guys sitting on a bench" width="400">
+    <figcaption>2 guys posing for me</figcaption>
+</figure>
+<figure class="three">
+    <img src="images/wssuImage_3.JPG" alt="Image of a student standing" width="400">
+    <figcaption>
+A student standing 
+    </figcaption>
+</figure>
+
+<p class="info">  She would even take us on fieldtrips, which was rare for a professor to use her own
+    resources to take us off campus. I started to love photgraphy and my professor encouraged me to get out of my comfort zone. I went to Los Angeles and took a couple of pictures and would send the 
+    images to my professor to get her feedback. Which helped a lot. She would tell me which lenses would be the best for the type of photography I was doing. 
+    Even after the class, we would remain in contact and she would give me pointers all of the time. 
+</p>
+<figure class="four">
+    <img src="images/laImage.JPG" alt="Strangers posing at Santa Monica Pier" width="400">
+    <figcaption>
+        Strangers posing at Santa Monica Pier
+    </figcaption>
+</figure>
+<figure class="five">
+    <img src="images/laImage_2.jpg" alt="Hills in HollyWood" width="400">
+    <figcaption>
+        Hills in Hollywood
+    </figcaption>
+</figure>
+<figure class="six">
+    <img src="images/laImage_3.jpg" alt="Hollywood Sign" width="400">
+    <figcaption>
+Hollywood Sign
+    </figcaption>
+</figure>
+<p class="info">
+    I started honing my craft and getting outside my comfort zone. I started taking picutres all over campus. At every event I was there with my camera. I even began to take graduation pictures
+    for students. I was known as the person that always had her camera around. I could tell from the first images that I took compared to a few months later, I was getting so much better.
+    I had a style of photography I loved, which is documentary/street and landscape photography.
+</p>
+<figure class="seven">
+    <img src="images/wssuImage_6.JPG" alt="" width="400">
+    <figcaption>
+WSSU favorite DJ
+    </figcaption>
+</figure>
+<figure class="eight">
+    <img src="images/wssuImage_8.JPG" alt="" width="400" >
+    <figcaption>
+ Omega Psi Phi Fraternity member
+    </figcaption>
+</figure>
+<figure class="nine">
+    <img src="images/wssuImage_7.JPG" alt="" width="400">
+    <figcaption>
+Kappa Alpha Psi Fraternity
+    </figcaption>
+</figure>
+
+</section>
+
+   </main>
+   <footer>
+    <p> <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" >
+        
+        <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." /> 
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css">
+        
+
+        <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
+    </a></p>
+    <p>Page designed by <a href="lewiswebco.html">  LewisWeb and Co</a> 2023</p>
+
+   
+    <script>
+        let fullImgBox = document.getElementById("full-img-box");
+        let fullImg = document.getElementById("full-img");
+    
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src=pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display="none";
+        }
+        
+
+    </script>
+   </footer>
+</body>
+</html>

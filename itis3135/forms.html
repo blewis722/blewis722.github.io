@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Brianna Lewis's Big Lion | Form </title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>ITIS3135 | Brianna Lewis's Big Lion</h1>
+        <div data-include="components/header.html"></div>
+    </header>
+   <main>
+<h2>Form</h2>
+<form action="#">
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name"  placeholder="Enter Full Name" pattern="[\w\w+]\s[\w+]${1,30}" title="Must be letters" maxlength="32" required><br>
+    <label for="number">Number</label><br>
+    <input type="number" id="number" name="number" required placeholder="Enter Phone Number" pattern="[\d]{7,10}" title="Must be a phone number of 7-10 digits"><br>
+    <label for="email">Email Address</label><br>
+    <input type="email" id="email" name="email" required placeholder="Enter Email" ><br>
+    <br>
+    
+        <legend>Do you like dogs?</legend>
+       
+  <label><input id="yes" type="radio" name="yes-no" value="yes" checked>yes</label>
+  <label><input id="no" type="radio" name="yes-no" value="no">no</label>
+<br>
+<br>
+    <legend>If you had to choose one for the rest of your life would you choose music or movies? </legend>
+    <label><input id="music" type="checkbox" name="choose" value="music" checked>Music</label>
+    <label><input id="movies" type="checkbox" name="choose" value="movies">Movies</label>
+<br>
+<br>
+
+<label for="hobbies">What is your favorite hobby</label>
+<select name="hobbies" id="hobbies">
+<option value="exercise">Exercise</option>
+<option value="games">Playing Video Games</option>
+<option value="reading">Reading</option>
+<option value="painting">Painting</option>
+</select>  
+<input type="submit">
+
+</form>
+<br>
+   </main>
+   <footer>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/defaultscripts.js"></script>
+    <script src="scripts/include.js"></script>
+   </footer>
+</body>
+</html>

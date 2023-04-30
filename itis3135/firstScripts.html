@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Brianna Lewis's Big Lion | FirstScripts </title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>ITIS3135 | Brianna Lewis's Big Lion</h1>
+        <div data-include="components/header.html"></div>          
+    </header>
+   <main>
+    <div class="date">
+<h2>Welcome to Big Lion's Page </h2> 
+<h2 class="scripts">FirstScripts</h2>
+
+
+<h3 id="date"></h3>
+<h4 id="message"></h4>
+
+</div>
+<label>Enter your name: </label> <br>
+<input type="text" id="name"  required ><br><br>
+
+<label for="mood"> How are you feeling today?</label><br>
+<input type="text" id="mood" placeholder="text" required ><br><br>
+<input type="submit" id="button" onclick="myFunction()">
+
+<div>
+<p>Click each of these buttons to see what they do!</p>
+<button id="time" onclick="myTime()">What time is it?</button>
+<button class="darkButton" id="toggleDark" onclick="toggleB()" >Dark Mode </button>
+<input type="text" id="color" placeholder="#FFFFFF">
+<button id="colorB" onclick="bColor()">Change Background Color</button>
+<button onclick="disable(this)">Disable me </button>
+<button onclick="countClicks()">Click Me</button>
+<p id="output"></p>
+
+</div>
+
+
+   </main>
+   <footer>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/defaultscripts.js"></script>
+    <script src="scripts/include.js"></script>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brianna Lewis's Passion</title>
+</head>
+
+
+<style>
+    /* #homee, #skillss, #projectss, #langs {
+  display: block;
+} */
+a.active{
+  display: flex;
+}
+</style>
+
+<body>
+    <header>
+    <ul id="top-menu-bar">
+        <li><a href="#" id="homee" onclick="showHomePage()" >Home</a></li>
+        <li><a href="#" id="skillss"onclick="showSkillsPage()" >Skills</a></li>
+        <li><a href="#" id="projectss" onclick="showProjectsPage()" >Projects</a></li>
+        <li><a href="#" id="langs"onclick="showLanguagesPage()" >Languages</a></li>
+      </ul>
+    </header>
+    <main>
+      <p id="home">I'm the home page.</p>
+      <p id="skills">I'm the skills page.</p>
+      <p id="projects">I'm the projects page.</p>
+      <p id="languages">I'm the languages page.</p>
+    </main>
+     
+    <script>
+  
+    
+const home = document.getElementById("homee");
+const skills = document.getElementById("skillss");
+const projects = document.getElementById("projectss");
+const languages = document.getElementById("langs");
+
+;
+function showHomePage() {
+  home.style.display = "none";
+  skills.style.display = "block";
+  projects.style.display = "block";
+  languages.style.display = "block";
+  
+}
+
+function showSkillsPage() {
+  home.style.display = "block";
+  skills.style.display = "none";
+  projects.style.display = "block";
+  languages.style.display = "block";
+}
+    
+function showProjectsPage() {
+  home.style.display = "block";
+  skills.style.display = "block";
+  projects.style.display = "none";
+  languages.style.display = "block";
+}
+    
+function showLanguagesPage() {
+  home.style.display = "block";
+  skills.style.display = "block";
+  projects.style.display = "block";
+  languages.style.display = "none";
+}
+    
+
+
+
+</script>
+
+</body> 
+</html>
+
