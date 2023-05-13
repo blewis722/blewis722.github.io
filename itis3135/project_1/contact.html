@@ -4,48 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS3135 | Brianna Lewis's Big Lion | Home </title>
-    <link rel="stylesheet" href="styles/default.css">
+    <title>Something Blue | Contact</title>
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=Roboto+Serif:wght@100&family=Space+Mono&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 <body>
     <header>
-       
+        <div>
+            <h1 class="logo"> <a href="index.html"> Something Blue </a> </h1> 
         <nav >
-        <h1 class="logo"> Something Blue </h1> 
+         
         <ul>
             <li id="siteLink"></li>
         </ul>
-        
-      
-       
        </nav>
-    
+    </div class=idk>
+
     </header>
    <main>
-<h2>Home</h2>
-<p>Stuff go here</p>
+    <div class="contact-div">
+<h2>Frequently Asked Questions</h2>
+<h3>Where are you located? Do you travel?</h3>
+<p> I am based out of Charlotte, NC. Yes, I travel. This would be one of our first topics to discuss on your discovery call. </p>
 
+ <h3>Do you help with posing? </h3>
+   <p> Absolutely! This is a very common question. I like to pride myself on helping clients feel relaxed during our time together. 
+        This is generally one of the first compliments that I receive from couples. </p>
+    
+<h3>How long does it take to receive our images from the shoot? </h3>
+    <p> After your session, you will receive a proofing gallery within 24 to 48 hours. Once I have received your favorites, 
+            I will then edit and deliver within five to seven days. Wedding galleries and add-ons are delivered within four to six
+             weeks after your wedding day </p>
+        
+<h3>Do you provide videography? </h3>
+    <p> Unfortunately, not at this time. However, I can provide references.</p>
+          
+            
+ <h3>What if I need my engagement portraits back sooner? </h3>
+     <p> Standard photo delivery is five to seven days. If you request to have your images much sooner, there will be a fee 
+                    of $25 per image applied for each photo in your package.</p>
+     
+                    
+<h3>Can I reschedule my photo session?</h3>
+<p>You are allowed one rescheduled appointment, but it must be rescheduled seven days before your scheduled shoot. Any shoot 
+    rescheduled within the seven days of your original date will require a reschedule fee of $75. Rescheduled shoots made within
+     the appropriate timeframe will be scheduled on a new date with the original deposit.</p>
+            </div>
+
+            <div class="contact-blocker"></div>
+
+            <div class="form">
+                     <button class="connect" onclick = "document.getElementById('id01').style.display='block'" >Click Here To Connect</button>
+                     <div id="id01" class="form-modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Form Modal">X</span>
+                <form class="modal-content" action="#">
+                    <div class="form-container">
+                        <h1 class="form-container-1">Contact Form</h1>
+                        <p>If you are inquiring about pricing, availability or second shooter services, use the form below. Please allow 48
+                            to 72 hours for a response. Thank you!</p>
+                            <hr class="form-hr">
+                            <label ><b>First Name</b></label>
+                            <input type="text" placeholder="Enter First Name" name="name" required>
+                            <br>
+
+                            <label ><b>Last Name </b></label>
+                            <input type="text" placeholder="Enter Last Name" name="name" required>
+                            <br>
+
+                            <label ><b>Email Addres</b></label>
+                            <input type="text" placeholder="Enter Email Address" name="email" required>
+                            <br>
+
+                            <label ><b> Type Of Inquiry </b></label>
+                            <input type="text" placeholder="I'm interested in engagement portraits." name="inquired" required>
+                            <br>
+
+                            <label ><b> Date </b></label>
+                            <br>
+                            <input type="date" name="date" required>
+                            <br>
+
+                            <label ><b>Message</b></label>
+                            <input type="text" placeholder="Describe your ideal service" name="message" required>
+                           <br>
+
+                            <label >
+                                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+                                Remember Me
+                            </label>
+
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancel">Cancel </button>
+                                <button type="submit" class="submit">Submit</button>
+                            </div>
+                    </div>
+                   
+                </form>
+            </div>
+            </div>
    </main>
    <footer>
-    <nav id="footerNav">
-        <a href="../">CLT Home |</a> 
-        <a href="https://github.com/blewis722">github.com |</a>
-        <a href="https://blewis722.github.io/">github.io |</a>
-        <a href="https://www.freecodecamp.org/BriannaLewis360">freecodecamp |</a>
-        <a href="https://www.codecademy.com/profiles/briannalewis360">codeacademy |</a>
-        <a href="https://www.linkedin.com/in/brianna-lewis-915405223">Linkedin |</a>
-        <a href=""></a>
-    </nav>
+    <div class="hours">
+        <h3>Office Hours</h3>
+        <p>Monday-Friday: 10:00am - 6:00pm</p>
+        <p>Saturday-Sunday: 9:00am - 7:00pm</p>
+        </div>
     <p> <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html" >
         
-        <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." /> 
+        <img src="images/button_validation_html5.png" width="88" height="31" alt="Validate webpage HTML." > 
     </a>
 
-    <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_html">
+    <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css">
         
 
-        <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." />
+        <img src="images/button_validation_css.png" width="88" height="31" alt="Validate webpage CSS." >
     </a></p>
     <p>Page designed by <a href="lewiswebco.html">  LewisWeb and Co</a> 2023</p>
 
